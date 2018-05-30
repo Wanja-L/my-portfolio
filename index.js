@@ -24,9 +24,9 @@ console.log(`My Portfolio is listening on ${port}`);
 
 let projectsData = [
     {
-        name: 'Python playaround on GitHub',
+        name: 'I am a Google link, for fun.',
         html_url: 'http://www.google.com',
-        description: 'I played around with python'
+        description: '(low key because i don\'t know whether it will break if i remove this)'
     }
 ];
 
