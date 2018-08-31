@@ -22,15 +22,14 @@ class App extends Component {
         const { projects } = this.state;
 
         return (
-            <div className="App">
-
-                {/* this is just a spacer <p></p> */}
-                
+            <div className="App" width="500">                
 
                 <img src={portrait} alt="Picture of Wanja" width="500" height="500" style={{marginTop: 30}}></img>
 
                 <h1>Hi, my name is Wanja</h1>
                 <h3>I'm an aspiring developer!</h3>
+                <p>I am a swiss raised kiwi who is passionate about web and tech that changes people's lives.</p>
+                <br></br> 
 
                 <h4>Here are a few of my projects</h4>
 
