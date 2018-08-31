@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import portrait from './portrait.jpg';
 
 class App extends Component {
     // Initialize state
     state = { projects: [] };
 
     // On load
-    componentDidMount() {
+    componentWillMount() {
         this.getProjects();
     }
 
@@ -23,8 +24,13 @@ class App extends Component {
         return (
             <div className="App">
 
-                <h1>Hi, my name is Lithowan </h1>
-                <h3>I'm a developer...</h3>
+                {/* this is just a spacer <p></p> */}
+                
+
+                <img src={portrait} alt="Picture of Wanja" width="500" height="500" style={{marginTop: 30}}></img>
+
+                <h1>Hi, my name is Wanja</h1>
+                <h3>I'm an aspiring developer!</h3>
 
                 <h4>Here are a few of my projects</h4>
 
@@ -38,7 +44,7 @@ class App extends Component {
                         ))
                     ) : (
                         <div>
-                            I don't have any projects
+                            Loading projects...
                         </div>
                     )
                 }
