@@ -1,63 +1,76 @@
-import React, { Component } from 'react';
-import './App.css';
-import portrait from './portrait.jpg';
+import React, { Component } from "react";
+import "./App.css";
+import portrait from "./portrait.jpg";
 
 class App extends Component {
-    // Initialize state
-    state = { projects: [] };
+  // Initialize state
+  state = { projects: [] };
 
-    // On load
-    componentWillMount() {
-        this.getProjects();
-    }
+  // On load
+  componentWillMount() {
+    this.getProjects();
+  }
 
-    // Set state with our projects
-    getProjects = () => {
-        fetch('/api/projects')
-            .then(res => res.json())
-            .then(projects => this.setState({projects}));
-    }
+  // Set state with our projects
+  getProjects = () => {
+    fetch("/api/projects")
+      .then(res => res.json())
+      .then(projects => this.setState({ projects }));
+  };
 
-    render() {
-        const { projects } = this.state;
+  render() {
+    const { projects } = this.state;
 
-        return (
-            <div className="App" width="500">                
+    return (
+      <div className="App" width="500">
+        <img
+          src={portrait}
+          alt="Picture of Wanja"
+          width="500"
+          height="500"
+          style={{ marginTop: 30 }}
+        />
 
-                <img src={portrait} alt="Picture of Wanja" width="500" height="500" style={{marginTop: 30}}></img>
+        <h1>Hi, my name is Wanja</h1>
+        <h3>I'm an aspiring developer!</h3>
+        <p>
+          I am a swiss raised kiwi who is passionate about web and tech that
+          changes people's lives.
+        </p>
+        <br />
+        <h4>Contact Info</h4>
+        <p>
+          email:{" "}
+          <a class="u-email" href="mailto:wanja.leuthold@gmail.com">
+            wanja.leuthold@gmail.com
+          </a>
+        </p>
+        <p>mobile: 0210418761</p>
+        <br />
 
-                <h1>Hi, my name is Wanja</h1>
-                <h3>I'm an aspiring developer!</h3>
-                <p>I am a swiss raised kiwi who is passionate about web and tech that changes people's lives.</p>
-                <br></br>
-                <h4>Contact Info</h4>
+        <h4>Here are a few of my projects</h4>
+
+        {projects.length ? (
+          projects
+            .sort((p1, p2) => {
+              return Date.parse(p2.updated_at) - Date.parse(p1.updated_at);
+            })
+            .map((project, index) => (
+              <div key={project.name}>
                 <p>
-                    email: <a class="u-email" href="mailto:wanja.leuthold@gmail.com">wanja.leuthold@gmail.com</a>
+                  <b>
+                    <a href={project.html_url}>{project.name}</a>
+                  </b>
                 </p>
-                <p>
-                    mobile: 0210418761
-                </p>
-                <br></br> 
-
-                <h4>Here are a few of my projects</h4>
-
-                {
-                    projects.length ? (
-                        projects.map((project, index) => (
-                            <div key={project.name}>
-                                <p><b><a href={project.html_url}>{project.name}</a></b></p>
-                                <p>{project.description}</p>
-                            </div>
-                        ))
-                    ) : (
-                        <div>
-                            Loading projects...
-                        </div>
-                    )
-                }
-            </div>
-        );
-    }
+                <p>{project.description}</p>
+              </div>
+            ))
+        ) : (
+          <div>Loading projects...</div>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;

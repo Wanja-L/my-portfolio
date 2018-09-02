@@ -22,13 +22,7 @@ app.get('*', (req, res) => {
 app.listen(port);
 console.log(`My Portfolio is listening on ${port}`);
 
-let projectsData = [
-    {
-        // name: 'I am a Google link, for fun.',
-        // html_url: 'http://www.google.com',
-        // description: '(low key because i don\'t know whether it will break if i remove this)'
-    }
-];
+let projectsData = [];
 
 const githubRepoUrl = 'https://api.github.com/users/Lithowan/repos';
 
@@ -41,7 +35,8 @@ function getProjects () {
                 return {
                     name: project.name,
                     html_url: project.html_url,
-                    description: project.description
+                    description: project.description,
+                    updated_at: project.updated_at
                 }
             });
 
