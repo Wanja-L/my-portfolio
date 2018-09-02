@@ -29,6 +29,14 @@ class App extends Component {
                 <h1>Hi, my name is Wanja</h1>
                 <h3>I'm an aspiring developer!</h3>
                 <p>I am a swiss raised kiwi who is passionate about web and tech that changes people's lives.</p>
+                <br></br>
+                <h4>Contact Info</h4>
+                <p>
+                    email: <a class="u-email" href="mailto:wanja.leuthold@gmail.com">wanja.leuthold@gmail.com</a>
+                </p>
+                <p>
+                    mobile: 0210418761
+                </p>
                 <br></br> 
 
                 <h4>Here are a few of my projects</h4>
