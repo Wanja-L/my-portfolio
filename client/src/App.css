@@ -1,25 +1,42 @@
 .App {
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  background: rgba(250, 58, 58, 0.95);
+  border: 50px;
+  border-radius: 20px;
+  padding: 2%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 0%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Section {
+  text-align: center;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 2% 
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ProjectCard {
+  text-align: left;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 2% 
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.Footer {
+  text-align: center;
+  border-radius: 20px;
+  padding: 1%;
+  margin-top: 5%;
 }
 
 @keyframes App-logo-spin {
