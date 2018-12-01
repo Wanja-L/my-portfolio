@@ -16,7 +16,16 @@ class Contact extends Component {
             wanja.leuthold@gmail.com
           </a>
         </p>
+
         <p>mobile: 0210418761</p>
+
+        <a
+          href='https://www.linkedin.com/in/wanja-leuthold/'
+          style={{ color: 'rgb(50,50,80)' }}
+        >
+          LinkedIn
+        </a>
+
         <br />
       </div>
     )
