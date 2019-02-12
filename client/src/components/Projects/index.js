@@ -1,11 +1,24 @@
 import React from 'react'
-import '../App.css'
-import ProjectCard from '../ProjectCard/ProjectCard'
+import styled from 'styled-components'
+import ProjectCard from '../ProjectCard'
 
-function Projects (props) {
+export default function Projects (props) {
   const projects = props.projects
+
+  const Projects = styled.div`
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 2%;
+  `
+
+  Projects.displayName = 'Projects'
+
   return (
-    <div className='Section'>
+    <Projects>
       <h3>Here are a few of my projects:</h3>
 
       {projects.length ? (
@@ -17,8 +30,6 @@ function Projects (props) {
       ) : (
         <div>Loading projects...</div>
       )}
-    </div>
+    </Projects>
   )
 }
-
-export default Projects

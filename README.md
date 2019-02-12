@@ -1,13 +1,11 @@
 # My portfolio page
-This is a small webapp to provide a central place for info about myself and my projects, and also a playground where I mess around with web development and JavaScript!
+This is a small webapp to provide a place for info about myself and my projects, and also a playground where I mess around with web development and JavaScript!
 
 ## Currently using:
-- React
-- Node.js with npm
-- CSS
+- functional React with React Hooks
+- Node.js with Yarn
+- Styled Components
 
 ## Future Plans:
-- convert to functional React
-- styled components instead of a CSS file
-- introduce React Hooks for state
+- better styling (bootstrap? material UI?)
 - add analytics

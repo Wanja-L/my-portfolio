@@ -1,9 +1,21 @@
 import React from 'react'
-import '../App.css'
+import styled from 'styled-components'
 
-function Contact () {
+export default function Contact () {
+  const Contact = styled.div`
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 2%;
+  `
+
+  Contact.displayName = 'Contact'
+
   return (
-    <div className='Section'>
+    <Contact>
       <h3>Contact Info</h3>
       <p>
         email:{' '}
@@ -26,8 +38,6 @@ function Contact () {
       </a>
 
       <br />
-    </div>
+    </Contact>
   )
 }
-
-export default Contact
