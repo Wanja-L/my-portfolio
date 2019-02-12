@@ -1,35 +1,33 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../App.css'
 
-class Contact extends Component {
-  render () {
-    return (
-      <div className='Section'>
-        <h3>Contact Info</h3>
-        <p>
-          email:{' '}
-          <a
-            class='u-email'
-            href='mailto:wanja.leuthold@gmail.com'
-            style={{ color: 'rgb(50,50,80)' }}
-          >
-            wanja.leuthold@gmail.com
-          </a>
-        </p>
-
-        <p>mobile: 0210418761</p>
-
+function Contact () {
+  return (
+    <div className='Section'>
+      <h3>Contact Info</h3>
+      <p>
+        email:{' '}
         <a
-          href='https://www.linkedin.com/in/wanja-leuthold/'
+          class='u-email'
+          href='mailto:wanja.leuthold@gmail.com'
           style={{ color: 'rgb(50,50,80)' }}
         >
-          LinkedIn
+          wanja.leuthold@gmail.com
         </a>
+      </p>
 
-        <br />
-      </div>
-    )
-  }
+      <p>mobile: 0210418761</p>
+
+      <a
+        href='https://www.linkedin.com/in/wanja-leuthold/'
+        style={{ color: 'rgb(50,50,80)' }}
+      >
+        LinkedIn
+      </a>
+
+      <br />
+    </div>
+  )
 }
 
 export default Contact
