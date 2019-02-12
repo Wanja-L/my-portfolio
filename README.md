@@ -9,6 +9,5 @@ This is a small webapp to provide a central place for info about myself and my p
 ## Future Plans:
 - convert to functional React
 - styled components instead of a CSS file
-- introduce Redux for state
-- migrate to yarn instead of npm
+- introduce React Hooks for state
 - add analytics
