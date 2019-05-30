@@ -24,7 +24,7 @@ console.log(`My Portfolio is listening on ${port}`);
 
 let projectsData = [];
 
-const githubRepoUrl = "https://api.github.com/users/Lithowan/repos";
+const githubRepoUrl = "https://api.github.com/users/Wanja-L/repos";
 
 function getProjects() {
   fetch(githubRepoUrl)
