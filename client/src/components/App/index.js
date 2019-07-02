@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Intro from '../Intro'
 import Contact from '../Contact'
@@ -9,6 +9,15 @@ import ReactGA from 'react-ga'
 export default function App () {
   const [projects, setProjects] = useState([])
   const [initialisedGA, setInitialisedGA] = useState(false)
+
+  useEffect(() => {
+    if (!initialisedGA) {
+      ReactGA.initialize('UA-143195632-1')
+      setInitialisedGA(true)
+    }
+    ReactGA.set({ page: window.location.pathname })
+    ReactGA.pageview(window.location.pathname)
+  }, [])
 
   fetch('/api/projects')
     .then(res => res.json())
@@ -29,13 +38,6 @@ export default function App () {
   `
 
   App.displayName = 'App'
-
-  if (!initialisedGA) {
-    ReactGA.initialize('UA-143195632-1')
-    setInitialisedGA(true)
-  }
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
 
   return (
     <App>
