@@ -4,6 +4,7 @@ import Intro from '../Intro'
 import Contact from '../Contact'
 import Projects from '../Projects'
 import Footer from '../Footer'
+import ReactGA from 'react-ga'
 
 export default function App () {
   const [projects, setProjects] = useState([])
@@ -27,6 +28,9 @@ export default function App () {
   `
 
   App.displayName = 'App'
+
+  ReactGA.initialize('UA-143195632-1')
+  ReactGA.pageview(window.location.pathname + window.location.search)
 
   return (
     <App>
