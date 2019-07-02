@@ -13,7 +13,10 @@ export default function Footer () {
 
   return (
     <Footer>
-      <p>Powered by React, Node.js and the github API</p>
+      <p>
+        Powered by React, Styled Components, Node.js, Express, Heroku and the
+        github API
+      </p>
     </Footer>
   )
 }

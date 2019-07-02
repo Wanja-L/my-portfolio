@@ -29,7 +29,7 @@ export default function Intro () {
       <h2>I care about elegant, useful software.</h2>
 
       <p>
-        I am a Swiss raised Kiwi, rock climber, and all about living life on two
+        I am a Swiss raised Kiwi, rock climber and all about living life on two
         wheels.
       </p>
       <br />
