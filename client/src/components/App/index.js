@@ -5,6 +5,7 @@ import Contact from '../Contact'
 import Projects from '../Projects'
 import Footer from '../Footer'
 import ReactGA from 'react-ga'
+import { device } from '../../util/device'
 
 export default function App () {
   const [projects, setProjects] = useState([])
@@ -31,10 +32,20 @@ export default function App () {
     border-radius: 20px;
     padding: 2%;
     position: absolute;
-    top: 5%;
-    left: 50%;
-    width: 50%;
     transform: translate(-50%, 0%);
+    @media ${device.mobileS} {
+      left: 50%;
+      width: 90%;
+    }
+    @media ${device.tablet} {
+      left: 50%;
+      width: 70%;
+    }
+    @media ${device.laptop} {
+      top: 5%;
+      left: 50%;
+      width: 50%;
+    }
   `
 
   App.displayName = 'App'
