@@ -5,9 +5,8 @@ import portrait from '../../portrait.jpg'
 export default function Intro () {
   const Intro = styled.div`
     text-align: center;
-    border-color: rgba(0, 0, 0, 0.5);
+    background-color: #f3c677;
     border-width: 4px;
-    border-style: solid;
     border-radius: 15px;
     padding: 2%;
     margin-top: 2%;
@@ -26,11 +25,14 @@ export default function Intro () {
       />
 
       <h1>Hi, my name is Wanja</h1>
-      <h2>I care about elegant, useful software.</h2>
+      <h2>
+        I care about elegant, useful software and doing work that I can stand
+        behind with awesome people.
+      </h2>
 
       <p>
-        I am a Swiss raised Kiwi, rock climber and all about living life on two
-        wheels.
+        I am a Kiwi raised in Switzerland, a rock climber and all about living
+        life on two wheels.
       </p>
       <br />
     </Intro>

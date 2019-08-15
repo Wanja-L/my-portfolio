@@ -6,9 +6,8 @@ export default function ProjectCard (props) {
 
   const ProjectCard = styled.div`
     text-align: left;
-    border-color: rgba(0, 0, 0, 0.5);
+    background-color: #b33f62;
     border-width: 4px;
-    border-style: solid;
     border-radius: 10px;
     padding: 2%;
     margin-top: 2%;
@@ -20,7 +19,7 @@ export default function ProjectCard (props) {
     <ProjectCard>
       <p>
         <b>
-          <a href={project.html_url} style={{ color: 'rgb(60,60,80)' }}>
+          <a href={project.html_url} style={{ color: '#0C0A3E' }}>
             {project.name}
           </a>
         </b>

@@ -7,9 +7,8 @@ export default function Projects (props) {
 
   const Projects = styled.div`
     text-align: center;
-    border-color: rgba(0, 0, 0, 0.5);
+    background-color: #f3c677;
     border-width: 4px;
-    border-style: solid;
     border-radius: 15px;
     padding: 2%;
     margin-top: 2%;
@@ -19,7 +18,7 @@ export default function Projects (props) {
 
   return (
     <Projects>
-      <h3>Here are a few of my projects:</h3>
+      <h3>Here's my most recent Github activity:</h3>
 
       {projects.length ? (
         projects

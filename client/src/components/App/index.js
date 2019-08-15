@@ -27,7 +27,7 @@ export default function App () {
   const App = styled.div`
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
-    background: rgba(250, 58, 58, 0.95);
+    background: transparent;
     border: 50px;
     border-radius: 20px;
     padding: 2%;
@@ -49,6 +49,8 @@ export default function App () {
   `
 
   App.displayName = 'App'
+
+  document.body.style = 'background-color: #0c0a3e;'
 
   return (
     <App>
