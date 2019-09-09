@@ -44,13 +44,13 @@ export default function App () {
     @media ${device.laptop} {
       top: 5%;
       left: 50%;
-      width: 50%;
+      width: 60%;
     }
   `
 
   App.displayName = 'App'
 
-  document.body.style = 'background-color: #0c0a3e;'
+  document.body.style = 'background-color: #4e508f;'
 
   return (
     <App>

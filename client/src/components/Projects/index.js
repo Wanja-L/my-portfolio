@@ -2,6 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import ProjectCard from '../ProjectCard'
 
+const centripetum = {
+  html_url: 'https://github.com/centripetum',
+  name: 'Centripetum',
+  description: 'A component toolkit built on modern web technologies.'
+}
+
+const createCamp = {
+  html_url: 'https://github.com/tristan-mastrodicasa/fishing-for-burgers',
+  name: 'Burgle',
+  description:
+    "A burger selection aid for Wellington on a Plate, built over 48 hours at Summer of Tech's Create Camp 2019"
+}
+
 export default function Projects (props) {
   const projects = props.projects
 
@@ -19,6 +32,9 @@ export default function Projects (props) {
   return (
     <Projects>
       <h3>Here's my most recent Github activity:</h3>
+
+      <ProjectCard project={centripetum} />
+      <ProjectCard project={createCamp} />
 
       {projects.length ? (
         projects

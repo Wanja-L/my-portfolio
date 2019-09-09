@@ -16,20 +16,18 @@ export default function Intro () {
 
   return (
     <Intro>
+      <h1>Hi, my name is Wanja</h1>
       <img
         src={portrait}
-        style={{ 'margin-top': '5%' }}
+        style={{ 'margin-top': '5%', 'border-radius': '15px' }}
         alt='Picture of Wanja'
         width='70%'
         height='70%'
       />
-
-      <h1>Hi, my name is Wanja</h1>
       <h2>
         I care about elegant, useful software and doing work that I can stand
         behind with awesome people.
       </h2>
-
       <p>
         I am a Kiwi raised in Switzerland, a rock climber and all about living
         life on two wheels.
