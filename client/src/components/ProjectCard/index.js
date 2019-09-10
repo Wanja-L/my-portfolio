@@ -7,7 +7,7 @@ export default function ProjectCard (props) {
   const ProjectCard = styled.div`
     text-align: left;
     color: #000000;
-    background-color: #fdc5e2;
+    background-color: #b88c9e;
     border-width: 4px;
     border-radius: 10px;
     padding: 2%;

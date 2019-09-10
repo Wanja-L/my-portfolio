@@ -31,7 +31,7 @@ export default function Projects (props) {
 
   return (
     <Projects>
-      <h3>Here's my most recent Github activity:</h3>
+      <h3>Here's some of my Github activity:</h3>
 
       <ProjectCard project={centripetum} />
       <ProjectCard project={createCamp} />
