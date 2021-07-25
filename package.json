@@ -8,7 +8,7 @@
     "start": "node index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "author": "",
+  "author": "Wanja Leuthold",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
